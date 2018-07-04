@@ -11,20 +11,20 @@ Learn Spanish conjugation the easy way.
 * Python 3: build the dictionary
 * Node.js: main application
 
-## Build
+## Setup
 
-Build the conjugation dictionary first:
+Build the dictionary:
 
 ```bash
 cd data && ./process.py
 ```
 
-The build script writes the processed dictionary into `site/data.json`
+The build script writes the processed dictionary to `site/data.json`
 
-Then start the server:
+Start the server:
 
 ```bash
 cd site && node app.js
 ```
 
-The server listens to port 8080 by default.
+The server listens on port 8080 by default.
