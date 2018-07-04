@@ -1,17 +1,14 @@
 # Conjugarden
 
 ## Introduction
+https://www.conjugarden.com/
+
 Learn Spanish conjugation the easy way.
 
 ## Dependencies
 
 * Python 3: build the dictionary
 * Node.js: main application
-
-## Screenshots
-![Exercise](https://github.com/hghwng/conjugarden/raw/master/screenshots/exercise.png)
-
-![Query](https://github.com/hghwng/conjugarden/raw/master/screenshots/query.png)
 
 ## Build
 
@@ -29,7 +26,4 @@ Then start the server:
 cd site && node app.js
 ```
 
-The server listens to port 8080 by default. Open http://localhost:8080 to use.
-
-
-Enjoy!
+The server listens to port 8080 by default
