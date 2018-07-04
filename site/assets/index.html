@@ -172,11 +172,8 @@ function query_load(data, inapp_query) {
     var gen_div = $('#div_query_general');
     gen_div.empty();
     if (data['word'] == undefined) {
-        if (inapp_query) {
-            gen_div.html('Type something to search...');
-        } else {
-            gen_div.html('<p>Your vocabulary is far beyond me :-P</p>' +
-                         '<p>Try a simpler word the next time.</p>');
+        if (!inapp_query) {
+            gen_div.html('<p>Not Found</p>');
         }
 
         return;
