@@ -1,7 +1,6 @@
 # Conjugarden
 
 ## Introduction
-https://www.conjugarden.com/
 
 Learn Spanish conjugation the easy way.
 
@@ -26,4 +25,4 @@ Then start the server:
 cd site && node app.js
 ```
 
-The server listens to port 8080 by default
+The server listens to port 8080 by default.
