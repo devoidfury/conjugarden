@@ -1,5 +1,7 @@
 # Conjugarden
 
+*Forked from [hghwng](https://github.com/hghwng/conjugarden)*
+
 ## Introduction
 
 Learn Spanish conjugation the easy way.
