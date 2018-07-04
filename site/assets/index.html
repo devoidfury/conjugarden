@@ -17,35 +17,24 @@ $(function() {
 
 $("#tab_exercise").hide();
 $("#tab_query").hide();
-$("#tab_translate").hide();
 
 $("#a_exec").click(function() {
     $("#tab_exercise").show();
     $("#tab_main").hide();
     $("#tab_query").hide();
-    $("#tab_translate").hide();
     if (g_quiz["1s"] == undefined) exercise_load();
 })
 $("#a_main").click(function() {
     $("#tab_exercise").hide();
     $("#tab_main").show();
     $("#tab_query").hide();
-    $("#tab_translate").hide();
 })
 $("#a_query").click(function() {
     query_load(g_data, true);
     $('#txt_query').val('');
     $("#tab_exercise").hide();
     $("#tab_main").hide();
-    $("#tab_translate").hide();
     $("#tab_query").show();
-})
-$("#a_translate").click(function() {
-    $('#txt_translate').val('');
-    $("#tab_exercise").hide();
-    $("#tab_main").hide();
-    $("#tab_query").hide();
-    $("#tab_translate").show();
 })
 
 function exercise_load() {
@@ -215,7 +204,6 @@ $("#btn_query").click(function() {
         <ul class="nav navbar-nav">
             <li><a id="a_exec" href="#exercise">Exercise</a></li>
             <li><a id="a_query" href="#query">Query</a></li>
-            <li><a id="a_translate" href="#translate">Translate</a></li>
         </ul>
     </div>
 </nav>
@@ -249,30 +237,6 @@ $("#btn_query").click(function() {
     </div>
 
     <div id="div_query_ret">
-    </div>
-</div>
-
-<div id="tab_translate" class="container">
-    <div class="container">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <form class="">
-                    <div class="input-group">
-                        <input type="text" class="form-control" id="txt_translate" placeholder="hello my name is">
-                        <span class="input-group-btn">
-                            <button class="btn btn-success" type="button" id="btn_translate">
-                                <span class="glyphicon glyphicon-search"/>
-                            </button>
-                        </span>
-                    </div>
-                </form>
-            </div>
-            <div id="div_translate_general" class="panel-body">
-            </div>
-        </div>
-    </div>
-
-    <div id="div_translate_ret">
     </div>
 </div>
 
