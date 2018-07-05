@@ -34,6 +34,16 @@ var server = http.createServer(function(req, resp) {
 		var key = req_url.query['word'];
 		show_word(key, resp);
 
+    } else if (req_url.pathname == '/favicon.ico') {
+        resp.setHeader('Content-Type', 'image/x-icon');
+        fs.createReadStream('assets/favicon.ico').pipe(resp);
+        return;
+        resp.end();
+    } else if (req_url.pathname == '/spain-flag-with-bull.png') {
+        resp.setHeader('Content-Type', 'image/png');
+        fs.createReadStream('assets/spain-flag-with-bull.png').pipe(resp);
+        return;
+        resp.end();
 	} else {
 
 		resp.writeHead(200, { 'Content-Type': 'text/html' });
